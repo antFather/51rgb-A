@@ -491,7 +491,8 @@ table {
     width: 282px;
     height: 280px;
     float: left;
-    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2)
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+    position: relative;
 }
 .card:hover{
     box-shadow: 0 0 8px 1px rgba(0,0,0,0.4);
@@ -524,18 +525,36 @@ table {
 }
 .videoName{
     font-size: 16px;
-    height: 60px;
+    height: auto;
     margin: 18px 18px 0 18px;
+    color:#282828;
 }
  .card .icon-luyin{
     color: #bcbcbc;
     font-size: 28px;
      margin-left: 15px;
 }
-video-message{
-    margin-bottom: 23px;
+.video-message{
+    bottom: 23px;
     height: 28px;
+    position: absolute;
+    line-height: 28px;
+}
+.video-message .luyinicon{
+    width: 32px;
+    height: 16px;
+    border: 1px solid #188eee;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    color: #188eee;
+    margin: 5px 0px 7px 20px;
     
+}
+.video-message .price{
+    color:#ffa926;
+    font-size: 14px;
+    margin-left: 50px;
 }
 .video-teacher{
     margin-left: 10px;
@@ -546,7 +565,7 @@ video-message{
 .videoplay-sum{
     color: #bcbcbc;
     font-size: 14px;
-    margin-right: 15px;
+    margin-left: 110px;
     line-height: 28px;;
 }
 
@@ -571,9 +590,74 @@ video-message{
     width: 306px;
     height: 596px;
     float: left;
-    box-shadow: box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
     margin-right: 16px;
-    background-color: aquamarine;
+    position: relative;
+}
+
+.course-ad .bg{
+    width: 100%;
+    height: 150px;
+    background: url(../image/bg.gif) no-repeat;
+}
+.designCourse .bg{
+    background-position: 0 0px;
+}
+.webCourse .bg{
+    background-position: 0 -150px;
+}
+.netCourse .bg{
+    background-position: 0 -300px;
+}
+.course-ad .offer{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #36373b;
+    margin: 0 83px;
+    position: absolute;
+    top: 70px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 32px 0;
+    
+}
+.course-ad>h2{
+    width: 100%;
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 107px;
+}
+.course-ad>h4{
+    color: #333;
+    font-size: 18px;
+    padding: 20px 20px;
+    line-height: 26px;
+    margin-top: 15px;
+}
+.course-ad>h5{
+    color: #bcbcbc;
+    font-size:16px;
+    margin: 50px 0 20px 20px;
+    
+}
+.netCourse .course-ad>h5{
+    margin-top: 24px;
+}
+.course-ad>a{
+    display: block;
+    background: #188eee;
+    color: #fff;
+    font-size: 24px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    margin: 0 30px 45px 30px;
 }
 .course-site{
     width: 878px;
@@ -582,6 +666,9 @@ video-message{
 }
 .coursecard{
     margin: 0 8px;
+}
+.card:hover .icon-luyin{
+    color: #188eee;
 }
 .cardbox{
     width: 882px;
@@ -769,14 +856,14 @@ video-message{
     height: 45px;
     display: block;
     position: fixed;
-    right:40px;
+    right:20px;
     bottom: 50px;
 }
 .qqbox{
     width: 50px;
     height: 436px;
     position: fixed;
-    right:40px;
+    right:20px;
     top: 350px;
     transition: all 0.8s;
 }
