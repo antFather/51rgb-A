@@ -7,3 +7,19 @@ $(".banner-box").slide({
     easing:'easeInBack',
     trigger:'click'
 });
+
+//$('.login-in') .onclick(function({
+//    
+//    $('signbox').removeClass('.hidden');
+//}));
+
+//$(".login-in").click(function(){
+//    $(".hidden").css("display","block");
+//   
+//});
+
+//$(".login-in").onmousemove(function(){
+//    $(".signbox").addClass("show");
+//   
+//});
+

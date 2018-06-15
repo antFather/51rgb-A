@@ -945,6 +945,269 @@ table {
     background: url(../image/qq.png) no-repeat;
 } 
 
+/*登入界面*/
+
+.signbox{
+    width: 400px;
+    height: 440px;
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.35);
+    top: 200px;
+    left: 760px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.sign-title{
+    width: 100%;
+    height: 90px;
+    color: #333;
+    font-size: 20px;
+}
+.sign-title>a{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    line-height: 90px;
+    float: left;
+    position: relative;
+    color: #333;
+}
+.sign-title a::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    right: 25%;
+    background: #188eee;
+    transition: all 0.2s;
+    visibility: hidden;
+    transform: scale(0.1);
+}
+.sign-title a:hover::after{
+    transform: scale(1);
+    visibility: visible;
+}
+.sign-title a:hover{
+    color: #188eee;
+}
+.signicon-box{
+    height: 150px;
+    padding-bottom: 60px;
+}
+.sign .sign-icon{
+    width: 100%;
+    padding: 0 15px;
+    height: 100px;
+}
+.sign .sign-icon >a{
+     float: left;
+     width: 110px;
+     height: 100px;
+    
+}
+.sign .sign-icon >a>i{
+  
+    font-size: 70px;
+    color: #666;
+    display: block;
+    height: 100px;
+    text-align: center;
+    width: 110px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    
+}
+.sign .sign-icon >a:hover >.icon-qq1{
+    color: #118eee;
+}
+.sign .sign-icon >a:hover >.icon-weixin-copy{
+    color: rgb(0,187,48);
+}
+.sign .sign-icon >a:hover >.icon-weibo{
+    color: rgb(247,52,57);
+}
+
+.sign .sign-text{
+     width: 100%;
+    padding: 0 15px;
+    height: 14px;
+    margin-top: 40px; 
+    
+}
+.sign .sign-text span{
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    width: 110px;
+    float: left; 
+    line-height: 14px;
+}
+.other-signin{
+    width: 100%;
+    height: 16px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.other-signin>a{
+    float: left;
+    color: #188eee;
+    font-size: 16px;
+    line-height: 16px;
+    width: 130px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 16px;
+    
+}
+.other-signin .line{
+    border-right:1px solid #188eee;
+}
+.other-signin>a:hover{
+    text-decoration: underline;
+}
+.sign .statement{
+    width: 100%;
+    margin: 30px 0;
+    padding:0 90px;
+    box-sizing: border-box;
+    height: 14px;
+
+}
+.sign .statement a,p,i{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    line-height: 14px;
+
+}
+.sign .statement>a{
+    float: left;
+    width: 12px;
+    vertical-align: -5px;
+}
+.sign .statement>p{
+    float: left;
+    height: 12px;
+    width: 160px;
+}
+.statement .icon-gouxuan{
+    color: #188eee;
+    padding-top: 2px;
+    display: block;
+}
+.signin-box{
+    width: 360px;
+    height: 226px;
+}
+.other-signup>a{
+    width: 100%;
+    height: 16px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    float: left;
+    color: #188eee;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.other-signup>a:hover{
+  text-decoration: underline;
+}
+
+.phone-signup{
+    padding: 0px 15px 0 15px;
+}
+
+.inputbox{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    height: 40px;
+    margin-top: 15px;
+}
+.inputbox:hover{
+    border-color: #188eee;
+}
+.phone{
+    position: relative;
+}
+.phoneicon{
+    position: absolute;
+    left: 2px;
+   
+    color: #aaa;
+    font-size: 40px;
+    line-height: 40px;
+}
+.inputbutton{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+.phone input{
+    width: 310px;
+    height: 38px;
+    outline: none;
+    margin-left: 20px;
+    display: block;
+    border: none;
+}
+.password{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+}
+.password input{
+    width: 200px;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding-left: 10px;
+    margin-right: 10px;
+    float: left;
+    box-sizing: border-box;
+    
+}
+.password >a{
+    float: right;
+    background: #188eee;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    width: 120px;
+}
+.password input:hover{
+  
+    border-color:  #188eee;
+}
+.inputbutton>a{
+    color: #fff;
+    background: #188eee;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
 
 
 
