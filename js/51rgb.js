@@ -40,10 +40,11 @@ $(function () {
     $('.phone-signup-button').click(function(){
         $('.phone-signup').removeClass('hidden');
         $('.signup-box,.signin-box').addClass('hidden');
+        $('.inputbutton a').html('注 册')
     });
      $('.usersign,.phone-sign').click(function(){
         $('.phone-signup').removeClass('hidden');
         $('.signup-box,.signin-box').addClass('hidden');
-         $('.inputbutton a').html('登 录')
+        $('.inputbutton a').html('登 录')
     });
 });
