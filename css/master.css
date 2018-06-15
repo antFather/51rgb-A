@@ -311,9 +311,10 @@ table {
 .banner-box > a > i {
     font-size: 30px;
     line-height: 60px;
+    color: #aaa;
 }
 
-.banner-box > a:hover {
+.banner-box > a:hover i{
     color: #fff;
 }
 
@@ -946,24 +947,55 @@ table {
 } 
 
 /*登入界面*/
+.registerbox{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 888;
+}
+.shade-box{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 899;
+}
 
 .signbox{
     width: 400px;
     height: 440px;
-    position: absolute;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px rgba(0,0,0,0.35);
-    top: 200px;
-    left: 760px;
+    margin: 260px auto;
     box-sizing: border-box;
     padding: 0 20px;
+    position: relative;
+    z-index: 999;
+    
+}
+.signbox .icon-guanbi{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #666;
+    font-size: 18px;
+    display: block;
+}
+.signbox .icon-guanbi:hover{
+    color: #188eee;
+    cursor: pointer;
 }
 .sign-title{
     width: 100%;
     height: 90px;
     color: #333;
     font-size: 20px;
+    margin-top: 20px;
 }
 .sign-title>a{
     display: inline-block;
@@ -1202,6 +1234,7 @@ table {
     font-weight: bold;
     margin-top: 15px;
 }
+
 .hidden{
     display: none;
 }
