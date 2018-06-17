@@ -12,12 +12,8 @@ $(function () {
         trigger: 'click'
     });
 
-//    $(".login-in").on("click", function () {
-//        $(".shade-box").removeClass("hidden");
-//    });
-//
     
-    //登入
+    //登入界面
     $('.login-in').click(function(){
          $('.registerbox').removeClass('hidden');
          $('.sign-in').css('color','#188eee');
@@ -56,4 +52,44 @@ $(function () {
          $('.signup-box,.signin-box').addClass('hidden');
          $('.inputbutton a').html('登 录')     
     });
+    
+    //返回顶部按钮
+    $(window).scroll(function(){
+        var x=$(window).scrollTop();
+        if(x>=1200){
+            $('.backtop').removeClass('hidden');
+        }else{
+            $('.backtop').addClass('hidden');
+        }
+        
+    })
+    
+    //客服按钮
+    $('.qq').click(function(){
+       var v=$('.qqbox').width();
+       if(v==50){
+           $('.qq').css('background-position','0 0'); 
+           $('.qqbox').animate({width:'220px'},50);
+           $('.kefu').animate({right:'0'},50);
+        }else{
+           $('.qq').css('background-position','-50px 0'); 
+           $('.qqbox').css('width','50px');
+           $('.kefu').css('right','-170px');
+      }
+        
+    })
+    
+    
+    
+    
+    
+    
+    
 });
+
+
+
+
+
+
+

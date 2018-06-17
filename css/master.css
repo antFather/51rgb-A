@@ -777,6 +777,7 @@ table {
     font-weight: bold;
 }
 .weixinleft p{
+    text-align: left;
     width: 380px;
     display: inline-block;
     margin-top: 10px;
@@ -857,33 +858,44 @@ table {
     height: 45px;
     display: block;
     position: fixed;
-    right:20px;
+    right:0px;
     bottom: 50px;
 }
 .qqbox{
     width: 50px;
     height: 436px;
     position: fixed;
-    right:20px;
-    top: 350px;
+    right:0px;
+    top: 380px;
     transition: all 0.8s;
+    overflow: hidden;
 }
 .qq{
     width: 50px;
     height: 45px;
     background: url(../image/qq.png) no-repeat -50px 0px;
-    float: left;
+    cursor: pointer;
 }
 
 .kefu{
-    width: 0px;
+    position: fixed;
+    top: 380px;
+    right: -170px;
+    width: 170px;
     height: 436px;
-    float: right;
     background: #fff;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
-    opacity: 0;
-    overflow: hidden;
     transition: all 0.8s;
+}
+.kefu .online{
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    background: #23b8ff;
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 45px;
 }
 .kefu-inner{
   padding: 0 15px;
@@ -908,16 +920,7 @@ table {
      vertical-align: middle
    
 }
-.kefu .online{
-    width: 100%;
-    height: 45px;
-    color: #fff;
-    font-size: 18px;
-    background: #23b8ff;
-    padding-left: 20px;
-    box-sizing: border-box;
-    line-height: 45px;
-}
+
 .kefu-inner>h5{
     
     color: #333;
@@ -935,16 +938,18 @@ table {
     margin-top: 10px;
 }
 
+/*
 .qqbox:hover{
     width: 220px;
 }
 .qqbox:hover .kefu{
-    opacity: 1;
-    width: 170px;
+    right: 0;
+    
 }
 .qqbox:hover .qq{
     background: url(../image/qq.png) no-repeat;
 } 
+*/
 
 /*登入界面*/
 .registerbox{
