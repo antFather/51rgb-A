@@ -79,8 +79,8 @@ $(function () {
         
     })
     
-    
-    
+    //list.html
+  
     
     
     
